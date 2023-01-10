@@ -1,0 +1,30 @@
+
+.shopHeader{
+    a{text-decoration: none;
+        font-size: 13px;
+    &:hover{text-decoration: underline;}}
+    img{width: 150px; height: 120px;}
+    .borderHover{
+   
+        text-decoration: none;
+        &:hover{border: 1px solid blue; }
+    }
+
+}
+
+.featuredOffer{
+    a{text-decoration: none;
+    
+    &:hover{text-decoration: underline;}
+
+}
+p{font-size: 12px;color: gray;}
+}
+.subscriptions{
+    a{text-decoration: none;
+    
+    &:hover{text-decoration: underline;}}
+    p{
+        font-size: 10px;
+    }
+}
