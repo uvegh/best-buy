@@ -507,18 +507,20 @@ tbody td:last-child {
     text-decoration: none;
     font-size: 17px;
   }
+}
+@media (min-width: 991px) {
+  .menu {
+    left: 50% !important;
+  }
   .triangle {
-    top: 85% !important;
-    bottom: 0% !important;
-    left: 49% !important;
     width: 0;
     z-index: 1;
-    position: absolute;
-    top: 85%;
+    top: 23% !important;
+    left: 47% !important;
     height: 0;
-    border-left: 60px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid white;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 20px solid white;
     width: 0;
   }
 }
@@ -533,7 +535,7 @@ nav {
   background-color: #113cbd;
 }
 nav .searchIcon {
-  left: 50%;
+  left: 45%;
   color: #0b84ff;
   font-size: 20px;
 }
@@ -720,17 +722,21 @@ ul {
   font-size: 17px;
 }
 
+.menu {
+  left: 25%;
+}
+
 .triangle {
   width: 0;
   z-index: 1;
-  position: absolute;
-  top: 85%;
+  position: fixed;
+  top: 12%;
   bottom: 0%;
-  left: 2%;
+  left: 20%;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 30px solid white;
+  border-bottom: 20px solid white;
   width: 0;
 }
 

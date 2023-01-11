@@ -21,21 +21,44 @@
         }
     }
 
-    .triangle{top: 85% !important;
-        bottom: 0% !important;
-        left: 49% !important;
+//     .triangle{top: 85% !important;
+        
+//         bottom: 0% !important;
+//         left: 70% !important;
     
- width: 0;
-    z-index: 1;
-    position: absolute;
-    top: 85%;
+//  width: 0;
+//     z-index: 1;
+//     position: absolute;
+//     top: 85%;
 
   
+// height: 0;
+// border-left: 30px solid transparent;
+// border-right: 30px solid transparent;
+// border-bottom: 30px solid white;
+// width: 0;
+// }
+    }
+
+    @media  (min-width:991px) 
+{
+
+   .menu{left: 50% !important;} 
+
+   .triangle{width: 0;
+    z-index: 1;
+  
+    top: 23%!important;
+    
+    left: 47% !important;
 height: 0;
-border-left: 60px solid transparent;
-border-right: 30px solid transparent;
-border-bottom: 30px solid white;
+border-left: 15px solid transparent !important;
+border-right: 15px solid transparent !important;
+border-bottom: 20px solid white;
 width: 0;
 }
-    }
+
+
+}
+
     
