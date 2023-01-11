@@ -252,8 +252,8 @@ setToggleNav(false);
 
 
 
-<div className="d-flex text-decoration-none header justify-content-around p-2">
-<div className="">
+<div className="d-lg-flex d-none text-decoration-none header justify-content-around p-2">
+<div className=" ">
 <Link>Holiday Deals <IoMdArrowDropdown/></Link>
 <Link>Top Deals</Link>
 

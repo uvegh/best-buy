@@ -1,0 +1,28 @@
+
+@media  (max-width:760px) 
+{
+
+    .navHide{
+        z-index: 2;  width: 100% !important; height:100% !important; overflow: scroll; top: 0% !important; position: absolute !important;
+    
+        a{
+            text-decoration: none;
+    
+            &:hover{
+                text-decoration: underline;
+            }
+    
+    }
+        .signIn{
+            a{
+                text-decoration: none;
+    font-size: 17px;
+            }
+        }
+    }
+
+    .triangle{top: 85% !important;
+        bottom: 0% !important;
+        left: 49% !important;}
+    
+}

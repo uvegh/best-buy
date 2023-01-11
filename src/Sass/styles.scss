@@ -2,7 +2,7 @@
 @import './footer';
 @import'./shop';
 @import'./slider';
-@import'./admin','./adminUser','loader';
+@import'./admin','./adminUser','loader','./mediaQueries';
 
 *{padding:0;margin:0;       font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;scroll-behavior: smooth}
 
@@ -10,9 +10,7 @@ nav{background-color: #113cbd;
     .searchIcon{left: 50%; color: #0b84ff; font-size: 20px;}
     .badge{font-size: 12px;}
     .cartIcon{font-size:20px}
- @media max-width {
-    
- }
+
 }
 
 

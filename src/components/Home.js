@@ -287,7 +287,7 @@ const ref = useRef(null)
 
       <div className="container-fluid m-auto mt-5 dealsContainer">
         <div className="row  ">
-          <div className="col-5 colCont rounded-2 border-1 m-auto p-4">
+          <div className="col-lg-5 col-md-12 col-sm-12 colCont rounded-2 border-1 m-auto p-4">
             <div className="d-flex mt-5 m-auto">
               <img src={clearance} alt="" width={140} />
               <div className="ms-4">
@@ -302,7 +302,7 @@ const ref = useRef(null)
             </div>
           </div>
 
-          <div className="col-5 colCont rounded-2 border-1 m-auto p-4">
+          <div className="col-5 col-md-12 col-sm-12 colCont rounded-2 border-1 m-auto p-4">
             <div className="d-flex mt-5 m-auto">
               <img src={blueTv} alt="" width={160} />
               <div className="ms-4">
@@ -319,10 +319,10 @@ const ref = useRef(null)
         </div>
       </div>
       <div className="cbBanner m-auto mt-5">
-        <div className=" d-flex container  justify-content-around">
+        <div className=" d-sm-flex d-sm-block container  justify-content-around">
           <div>
             {" "}
-            <p className="fw-bolder text-white fs-5">
+            <p className="fw-bolder text-white fs-5 container-fluid">
               {" "}
               Totaltech <br />
               Make holiday shopping a breeze{" "}
@@ -336,7 +336,7 @@ const ref = useRef(null)
             </p>
           </div>
 
-          <div className="mt-3">
+          <div className="mt-3 container-fluid">
             <Link
               className="m-auto text-decoration-none text-black fw-bold p-2 rounded "
               style={{ backgroundColor: "yellow" }}
@@ -370,7 +370,7 @@ const ref = useRef(null)
         <p className="fw-bolder">Our featured offers</p>
       </div>
 
-      <div className="container-fluid mt-3 featured ">
+      <div className="container-fluid container-sm-fluid mt-3 featured ">
         <div className="row ">
           <div className="col">
             <Link>
@@ -425,7 +425,7 @@ const ref = useRef(null)
 
       <div className="delivery container">
         <div className="row">
-          <div className="col d-flex">
+          <div className="col-lg-4 col-md-8 d-flex">
             <img src={delivery2} className="" alt="" width={80} height={80} />
             <Link>
               <p className="fw-bolder fs-3 text-decoration-none">
@@ -439,7 +439,7 @@ const ref = useRef(null)
             </Link>
           </div>
 
-          <div className="col d-flex">
+          <div className="col-lg-4 col-md-8 d-flex">
             <img src={delivery2} className="" alt="" width={80} height={80} />
             <Link>
               <p className="fw-bolder fs-3 text-decoration-none">
@@ -481,7 +481,7 @@ const ref = useRef(null)
 
       <div className="container-fluid mt-3 mayLike ">
         <div className="row ">
-          <div className="col">
+          <div className=" col-lg-4 col-md-5 ">
             <Link>
               <img src={laptop1} alt="" className="img-fluid" />
             </Link>
@@ -497,7 +497,7 @@ const ref = useRef(null)
             <p className="fw-bold">$849.99</p>
           </div>
 
-          <div className="col">
+          <div className="col col-lg-4 col-md-5">
             <Link>
               <img src={laptop1} alt="" className="img-fluid" />
             </Link>
@@ -513,7 +513,7 @@ const ref = useRef(null)
             <p className="fw-bold">$849.99</p>
           </div>
 
-          <div className="col">
+          <div className=" col-lg-4 col-md-5">
             <Link>
               <img src={laptop1} alt="" className="img-fluid" />
             </Link>
@@ -529,7 +529,7 @@ const ref = useRef(null)
             <p className="fw-bold">$849.99</p>
           </div>
 
-          <div className="col">
+          <div className=" col-lg-4 col-md-5">
             <Link>
               <img src={laptop1} alt="" className="img-fluid" />
             </Link>
@@ -545,7 +545,7 @@ const ref = useRef(null)
             <p className="fw-bold">$849.99</p>
           </div>
 
-          <div className="col">
+          <div className=" col-lg-4 col-md-5">
             <Link>
               <img src={laptop1} alt="" className="img-fluid" />
             </Link>
@@ -561,7 +561,7 @@ const ref = useRef(null)
             <p className="fw-bold">$849.99</p>
           </div>
 
-          <div className="col">
+          <div className=" col-lg-4 col-md-5">
             <Link>
               <img src={laptop1} alt="" className="img-fluid" />
             </Link>
