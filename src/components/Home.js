@@ -302,9 +302,9 @@ const ref = useRef(null)
             </div>
           </div>
 
-          <div className="col-5 col-md-12 col-sm-12 colCont rounded-2 border-1 m-auto p-4">
+          <div className="col-lg-5 col-md-12 col-sm-12 colCont rounded-2 border-1 m-auto p-4">
             <div className="d-flex mt-5 m-auto">
-              <img src={blueTv} alt="" width={160} />
+              <img src={blueTv} alt="" width={140} />
               <div className="ms-4">
                 <Link className="d-inline-block text-decoration-none">
                   Samsung - 43" Class TU690T Series LED 4K UHD Smart Tizen TV
@@ -579,7 +579,7 @@ const ref = useRef(null)
         </div>
       </div>
 
-      <div className="container-fluid imgSlider ">
+      <div className="container-fluid imgSlider d-none d-lg-block ">
         <div className="lastMinuteGifts position-relative ">
           <img src={gifts} className="position-relative" />
           <div className="position-absolute  textOverlay">
@@ -671,8 +671,8 @@ const ref = useRef(null)
       </div>
 
       <div className="forYou  p-4 container-fluid p-5 mt-5 m-auto">
-        <div className="row container  m-auto">
-          <div className="col">
+        <div className="row container  m-auto g-md-2  g-sm-2">
+          <div className="col-lg-2 col-md-6 col-sm-6">
             <Link>
               <img src={forYou1} alt="" className="img-fluid" />
             </Link>
@@ -680,7 +680,7 @@ const ref = useRef(null)
             <Link>Google - Pixel 6a 128GB (Unlocked) - Charcoal</Link>
           </div>
 
-          <div className="col">
+          <div className="col-lg-2 col-md-6 col-sm-6">
             <Link>
               <img src={forYou2} alt="" className="img-fluid" />
             </Link>{" "}
@@ -688,7 +688,7 @@ const ref = useRef(null)
             <Link>Google - Nest Cam (Wired) - Snow</Link>
           </div>
 
-          <div className="col">
+          <div className="col-lg-2 col-md-6 col-sm-6">
             <Link>
               <img src={forYou3} alt="" className="img-fluid" />
             </Link>{" "}
@@ -696,7 +696,7 @@ const ref = useRef(null)
             <Link>Google - Nest Doorbell Battery - Snow</Link>
           </div>
 
-          <div className="col">
+          <div className="col-lg-2 col-md-6 col-sm-6">
             <Link>
               <img src={forYou4} alt="" className="img-fluid" />
             </Link>{" "}
@@ -704,7 +704,7 @@ const ref = useRef(null)
             <Link>Google - Nest Cam with Floodlight - Snow</Link>
           </div>
 
-          <div className="col">
+          <div className="col-lg-2 col-md-6 col-sm-6">
             <Link>
               <img src={forYou5} alt="" className="img-fluid" />
             </Link>{" "}
@@ -712,7 +712,7 @@ const ref = useRef(null)
             <Link>Google - Nest Audio - Smart Speaker - Chalk</Link>
           </div>
 
-          <div className="col">
+          <div className="col-lg-2 col-md-6 col-sm-6">
             <Link>
               <img src={forYou6} alt="" className="img-fluid" />
             </Link>{" "}
@@ -722,7 +722,7 @@ const ref = useRef(null)
         </div>
       </div>
       <div className="container-fluid row rows-col-3 giftIdeas mt-5 gx-1 m-auto mt-5" >
-        <div className="col-3 row bg-light  g-4 m-auto">
+        <div className="col-lg-3 col-md-12 col-sm-10 row bg-light  g-4 m-auto">
           <h4 className="fw-bolder">Gifts ideas for everyone</h4>
           <div className="col-6">
             <img src={giftIdeas1} alt="" />
@@ -741,7 +741,7 @@ const ref = useRef(null)
           </div>
         </div>
 
-        <div className="col-3 row bg-light  g-4 m-auto">
+        <div className="col-lg-3 col-md-12 col-sm-10 row bg-light  g-4 m-auto">
           <h4 className="fw-bolder">Gift Ideas by price</h4>
           <div className="col-6">
             <img src={giftsUnder1} alt="" />
@@ -760,7 +760,7 @@ const ref = useRef(null)
           </div>
         </div>
 
-        <div className="col-3 row bg-light  g-4 m-auto">
+        <div className="col-lg-3 col-md-12 col-sm-10  row bg-light  g-4 m-auto">
           <h4 className="fw-bolder">Last-minute gifts</h4>
           <div className="col-6">
             <img src={giftIdeas1} alt="" />
@@ -780,28 +780,28 @@ const ref = useRef(null)
         </div>
       </div>
 
-      <div className="container-fluid mt-5" style={{width:"96%"}}>
+      <div className="container-lg-fluid  mt-5" style={{width:"96%"}}>
         <div className="row">
-          <div className="col">
+          <div className="col-lg-4 col-md-12 col-sm-12">
           <img src={ad3} alt="" className="img-fluid" />
         
           </div>
 
-          <div className="col">
+          <div className="col-lg-4 col-md-12 col-sm-12">
             <img src={ad2} alt="" className="img-fluid" />
           </div>
 
-          <div className="col border border-primary">
+          <div className="col-lg-4 col-md-12 col-sm-12 border border-primary">
           <img src={clearanceBox} alt="" className="img-fluid" />
           </div>
         </div>
       </div>
 
       <div className="cbBanner m-auto  ">
-      <div className="m-auto d-flex justify-content-center" style={{width:"80%"}}>
+      <div className="m-auto d-sm-flex d-md-block d-lg-flex justify-content-center" style={{width:"80%"}}>
         <div className=" container mt-5"> 
-        <div className="d-flex justify-content-center">
-        <div>
+        <div className="d-flex  justify-content-center  ">
+        <div className="mt-sm-6">
           <img src={vpeCard} alt="" width={120} />
           </div>
           <div>

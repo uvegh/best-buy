@@ -71,7 +71,7 @@ export default function SingleProduct() {
   return (
     <>
     
-      <div className="row border-top container-fluid mt-4">
+      <div className="row border-top container-fluid mt-4 m-md-5 m-sm-5">
       <div className="singleNav container mt-3">
       <Link to="/">Best Buy</Link>  <MdArrowRight/> <Link to="/shop">Apple</Link>  <MdArrowRight/> <Link>Iphone14</Link>  
     </div>

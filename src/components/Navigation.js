@@ -39,6 +39,21 @@ const navigate = useNavigate()
     <Link  onClick={handleClickNav} className=" border-none text-white fw-bolder fs-5 text-decoration-none ms-2"  >
     <GiHamburgerMenu/> MENU
     </Link>
+
+<ul className="navbar-nav">
+    <li className="nav-item text-white fw-bold fs-1 ms-5 d-lg-none">
+        <Link style={{textDecoration:"none",color:"white"}} to="/cart">    <button type="button" className="btn btn-primary position-relative">
+       <span className="cartIcon text-white fw-bolder"> <HiOutlineShoppingCart/></span> {cart.length===0?
+        (null):
+        (<span className=" badge position-absolute top-0 start-100 translate-middle p-1   bg-danger border border-light rounded-circle"> {cart.length}
+    <span className="visually-hidden">New alerts</span>
+  </span>)}
+  
+</button>  <span className="fs-5" >  Cart   </span> </Link> 
+    
+        </li>
+        </ul>
+
     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul className="navbar-nav me-auto mb-2 col-9">
         <li className="nav-item col-7">
@@ -52,13 +67,13 @@ const navigate = useNavigate()
       
       </ul>
 
-      <ul className="navbar-nav  mb-ser ">
+      <ul className="navbar-nav  ">
         <li className="nav-item text-white fw-bold fs-1">
       <IoMdSave/>  <span className="fs-5"> Hato Rey</span>
         </li>
       
         <li className="nav-item text-white fw-bold fs-1 ms-5">
-        <Link style={{textDecoration:"none",color:"white"}} to="/cart">    <button type="button" className="btn btn- position-relative">
+        <Link style={{textDecoration:"none",color:"white"}} to="/cart">    <button type="button" className="btn btn-primary position-relative">
        <span className="cartIcon text-white fw-bolder"> <HiOutlineShoppingCart/></span> {cart.length===0?
         (null):
         (<span className=" badge position-absolute top-0 start-100 translate-middle p-1   bg-danger border border-light rounded-circle"> {cart.length}

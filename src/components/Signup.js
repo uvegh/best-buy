@@ -41,7 +41,7 @@ body:JSON.stringify(signupData)})
 
     return (
         <div className="h-100 pt-5 signIn" style={{background:"#e0e6ef"}} >
-        <div className="pt-6 border border-2 m-auto col-4 bg-white"  >
+        <div className="pt-6 border border-2 m-auto col-sm-8 col-md-5 col-lg-4 bg-white"  >
     <div className=' text-center' >
     <h5 className="fw-bolder mt-3">Sign Up to Best Buy</h5>
     </div>

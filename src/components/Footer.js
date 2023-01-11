@@ -18,24 +18,24 @@ export default function Footer() {
 
 <footer className='mt-5' style={{backgroundColor:"#c5cbd5"}}>
 <div className="row m-auto text-center ">
-    <div className="col-3 m-auto ">
+    <div className="col-lg-3 col-md-6 col-sm-12  m-auto ">
     <div className="col-3"> <Icon1 /></div>
 
 <Link className=''>Visit our Support Center</Link>
     </div>
 
-    <div className="col-3 m-auto">
+    <div className="col-lg-3 col-md-6 col-sm-12  m-auto">
     <div className="col-3"> <Icon2 /></div>
 
 <Link className=''>Visit our Support Center</Link>
     </div>
 
-    <div className="col-3 m-auto">
+    <div className="col-lg-3 col-md-6 col-sm-12  m-auto">
     <div className="col-3"> <Icon3 /></div>
 
 <Link className=''>Visit our Support Center</Link>
     </div>
-    <div className="col-3 m-auto">
+    <div className="col-lg-3 col-md-6 col-sm-12  m-auto">
     <div className="col-3"> <Icon4 /></div>
 
 <Link className=''>Visit our Support Center</Link>
@@ -158,7 +158,7 @@ About Best Buy</li>
 
 </div>
 
-<div className="row border-top pt-5 socails ">
+<div className="row border-top pt-5 socails mb-sm-2">
     <div className="col">
         <Link> <Facebook /> </Link>
     </div> 
@@ -194,12 +194,12 @@ About Best Buy</li>
 </div>
             <p></p>
 <div>
-<div className="d-flex container links justify-content-evenly border-top pt-3">
-<Link> Accessibility</Link>
-<Link> Terms & Conditions</Link>
-<Link> Privacy</Link>
+<div className="d-lg-flex d-md-block d-sm-block container links justify-content-evenly border-top pt-3">
+<Link className='me-md-2 me-sm-2'> Accessibility</Link>
+<Link > Terms & Conditions</Link>
+<Link className='me-md-2 me-sm-2'> Privacy</Link>
 <Link> Interest-Based Ads</Link>
-<Link> California Privacy Rights</Link>
+<Link className='me-md-2 me-sm-2'> California Privacy Rights</Link>
 <Link> Do Not Sell My Personal Information</Link>
 <Link> 
 California Supply Chain Transparency Act</Link>
@@ -210,7 +210,7 @@ California Supply Chain Transparency Act</Link>
 
 
 
-            <p className='mt-2 container 'style={{fontSize:"13px"}}>In-store pricing may vary. Prices and offers are subject to change. © 2022 Best Buy. All rights reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and its affiliated companies.</p>
+            <p className='mt-2 container mb-2 fs-md-6 fs-sm-6 'style={{fontSize:"13px"}}>In-store pricing may vary. Prices and offers are subject to change. © 2023 centeDev Buy. All rights reserved. BEST BUY, the BEST BUY logo, the tag design, and MY BEST BUY are trademarks of Best Buy and its affiliated companies.</p>
         </div>
     </footer>
     </div>
