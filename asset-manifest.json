@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/best-buy/static/css/main.8f78fe5a.css",
-    "main.js": "/best-buy/static/js/main.e53ebb52.js",
+    "main.js": "/best-buy/static/js/main.4f2e2707.js",
     "static/media/iphone4.jpg": "/best-buy/static/media/iphone4.bbbf0d53edde5778be7a.jpg",
     "static/media/tv1.jpg": "/best-buy/static/media/tv1.108abb98a1ca7081f075.jpg",
     "static/media/iphone5.jpg": "/best-buy/static/media/iphone5.54f3892c41669909fa3c.jpg",
@@ -62,10 +62,10 @@
     "static/media/twitter.svg": "/best-buy/static/media/twitter.d1764aec987a8ea2d95117579b1cfed9.svg",
     "static/media/facebook.svg": "/best-buy/static/media/facebook.6d2b95a3d7d64c209e8603a2781b4091.svg",
     "main.8f78fe5a.css.map": "/best-buy/static/css/main.8f78fe5a.css.map",
-    "main.e53ebb52.js.map": "/best-buy/static/js/main.e53ebb52.js.map"
+    "main.4f2e2707.js.map": "/best-buy/static/js/main.4f2e2707.js.map"
   },
   "entrypoints": [
     "static/css/main.8f78fe5a.css",
-    "static/js/main.e53ebb52.js"
+    "static/js/main.4f2e2707.js"
   ]
 }
