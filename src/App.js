@@ -4,7 +4,7 @@ import "./Sass/styles.css";
 import Navigation from "./components/Navigation";
 
 
-import { BrowserRouter, Routes, Route,HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
@@ -38,7 +38,7 @@ const [isLoggedIn,setIsLoggedIn]=useState(null)
     <>
 <BestBuyProvider>
 
-    <HashRouter>
+    <BrowserRouter>
 
 
 
@@ -93,7 +93,7 @@ const [isLoggedIn,setIsLoggedIn]=useState(null)
 
 
 
-    </HashRouter>
+    </BrowserRouter>
 
     </BestBuyProvider>
  
