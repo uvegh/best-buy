@@ -548,7 +548,7 @@ export default function UserAdmin() {
                           <tbody className="" >
                             <tr key={index}>
                               <td className=" fw-bolder fs-5">{index + 1}</td>
-                              <td className=" fw-lighter fs-6">{usersData.name}</td>
+                              <td className=" fw-lighter fs-6">{usersData.name.firstname+""+usersData.name.lastname}</td>
                               <td className=" fw-lighter fs-6">{usersData.email}</td>
                               <td className=" fw-lighter fs-6">{usersData.phone}</td>
 
@@ -564,7 +564,7 @@ export default function UserAdmin() {
                                 |
                                 <button style={{ background: "rgba(211, 56, 56, 0.568)" }}
                                   onClick={() => {
-                                    deleteUser(usersData._id);
+                                    deleteUser(usersData.id);
                                   }}
                                   className="btn btn-danger fs-3 fw-bolder border-0 text-dark"
                                 >

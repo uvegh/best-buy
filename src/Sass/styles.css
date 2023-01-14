@@ -197,6 +197,11 @@ input:checked + .slider:before {
   font-size: 10px;
 }
 
+.prodDes {
+  min-height: 35%;
+  line-height: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -527,7 +532,7 @@ tbody td:last-child {
 * {
   padding: 0;
   margin: 0;
-  font-family: Human BBY Digital, Human Fallback, Arial, Helvetica, sans-serif;
+  font-family: monospace;
   scroll-behavior: smooth;
 }
 

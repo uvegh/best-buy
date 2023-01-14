@@ -365,21 +365,21 @@ console.log(formData);
                   to="/admin"
                   className=" nav-link text-light fs-5 fw-bolder p-1 mt-2"
                 >
-                  <span>
+                  <span className="fs-3">
                     <MdOutlineDashboardCustomize />
                   </span>
-                  <span>DASHBOARD</span>
+                  <span className="fs-3">DASHBOARD</span>
                 </Link>
 
                 <Link
                   to="/admin/user"
                   className="nav-link text-light fs-5 fw-bolder  p-1 mt-lg-4"
                 >
-                  <span>
+                  <span className="fs-3">
                     {" "}
                     <HiUsers />
                   </span>
-                  <span>USERS</span>
+                  <span className="fs-3">USERS</span>
                 </Link>
 
                 <Link
@@ -387,7 +387,7 @@ console.log(formData);
                   className="nav-link text-light fs-5 fw-bolder mt-lg-4  p-1"
                 >
                   <GiShoppingBag />
-                  <span>PRODUCT</span>
+                  <span className="fs-3">PRODUCT</span>
                 </Link>
               </ul>
             </div>
@@ -445,8 +445,8 @@ console.log(formData);
                   ) : (
                     myProducts.map((product, index) => (
                       <div
-                        className="col-4 bg-light  border rounded-3 shadow"
-                        key={product._id}
+                        className="col-lg-4 col-md-6 col-sm-6 bg-light  border rounded-3 shadow"
+                        key={product.id}
                       >
                         <Link
                           onClick={() => {
@@ -455,30 +455,34 @@ console.log(formData);
                           }}
                           className="text-decoration-none text-dark"
                         >
+<h3 className="text-decoration-none text-dark border-bottom border-1">
+                          {product.name}
+                        </h3>
+
                           <LazyLoadImage
-                            src={`http://159.65.21.42:9000${product.image}`}
+                            src={product.image}
                             className=""
-                            width={100}
-                            height={100}
+                            width={250}
+                            height={250}
                             alt=""
                             effect="blur"
                           />
                         </Link>
 
-                        <h3 className="text-decoration-none text-dark">
-                          {product.name}
-                        </h3>
-                        <p className="text-dark">
-                          <br /> {product.description}
+                        
+                        <p className="text-dark prodDes">
+                          <br /> {product.description}.
                         </p>
                         <br />
 
-                        <p className="fw-bolder">${product.price}</p>
+                        <p className="fw-bolder"><span className="fw-lighter">Price-</span> ${product.price}</p>
                         <br />
-                        <div className="d-flex justify-content-between w-50" >
+
+
+                        <div className="d-flex justify-content-between container-fluid sticky-bottom  bg-secondary p-2" >
                           <button
-                            className="btnAdmin  fs-3 fw-bolder  text-dark"
-                            style={{ background: "whitesmoke" }}
+                            className="btn btn-lg  btn-danger fs-3 fw-bolder border-0 text-dark"
+                            style={{ background: "#104d55" }}
                             onClick={() => {
                               editProduct(index);
                             }}
@@ -486,8 +490,8 @@ console.log(formData);
                             <AiOutlineEdit />
                           </button>{" "}
                           <Link
-                            className="btnAdmin  fs-3 fw-bolder text-dark"
-                            style={{ background: "whitesmoke" }}
+                            className="btn btn-lg  btn-danger fs-3 fw-bolder border-0 text-darkr"
+                            style={{ background: "rgba(211, 56, 56, 0.568)" }}
                             onClick={() => {
                               deleteProduct(product._id);
                             }}

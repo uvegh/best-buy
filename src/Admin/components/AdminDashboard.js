@@ -302,7 +302,7 @@ export default function AdminDashboard() {
 }}>
             <div className="col-10 fs-6 card-body min-vh-50 m-auto border rounded-4 shadow " key={recentData._id}>
             <div className="card" style={{width: "18rem"}}>
-  <LazyLoadImage src={`http://159.65.21.42:9000${recentData.image}`} className="card-img-fluid" alt={recentData.name}/>
+  <LazyLoadImage src={recentData.image} className="img-fluid" alt={recentData.name}/>
   <div className="card-body">
     <h5 className="card-title text-dark fw-bolder">{recentData.name}</h5>
     <p className="card-text fw-light">
