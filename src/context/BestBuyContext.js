@@ -36,7 +36,7 @@ const togglePsswd=()=>{
 
 
   const getProducts=()=>{
-    fetch("http://159.65.21.42:9000/products")
+    fetch("https://fakestoreapi.com/products")
     .then(resp=>resp.json())
     .then((data)=>{
       // console.log(data);
@@ -46,10 +46,10 @@ const togglePsswd=()=>{
 
 
   const getUsers=()=>{
-    fetch("http://159.65.21.42:9000/users")
+    fetch("https://fakestoreapi.com/users")
     .then(resp=>resp.json())
     .then((data)=>{
-      // console.log(data);
+      //  console.log(data);
       setInitUsers(data)
       
       const usersReverse=data.reverse()
@@ -63,9 +63,9 @@ const togglePsswd=()=>{
 
   const filter = () => {
     let filteredProducts = products.filter(
-      (item) => item.category === "bestBuy"
+      (item) => item.category === "electronics"
     );
-    // console.log(filteredProducts);
+    //  console.log(filteredProducts);
  
     const productsReverse = [...filteredProducts].reverse();
     setMyProducts(productsReverse);
@@ -90,7 +90,7 @@ const activateCart = () => {
 };
 const addToCart = (item) => {
   let initialCartData = [...cart];
-  let checkProduct = initialCartData.find(prod => prod._id === item._id);
+  let checkProduct = initialCartData.find(prod => prod.id === item.id);
   if (checkProduct) {
     alert("Product Already In Cart!!!!");
   } else {
@@ -105,7 +105,7 @@ const addToCart = (item) => {
 const handleQtyDecrease=(cartItem)=>{
 let initCartData =[...cart]
 initCartData.find((foundItem)=>{
-  if(foundItem._id===cartItem._id){
+  if(foundItem.id===cartItem.id){
     if (cartItem.qty>1) {
       cartItem.qty-=1;
       cartItem.totalPrice= cartItem.price*cartItem.qty;
@@ -123,7 +123,7 @@ initCartData.find((foundItem)=>{
 const handleQtyIncrease=(cartItem)=>{
 let initCartData =[...cart]
 initCartData.find((foundItem)=>{
-if (foundItem._id===cartItem._id) {
+if (foundItem.id===cartItem.id) {
   cartItem.qty+=1;
   cartItem.totalPrice= cartItem.price*cartItem.qty;
 }
@@ -137,7 +137,7 @@ setCart(initCartData)
   const deleteCartItem =(cartItem)=>{
     let initCartData =[...cart]
     let deletedItem=initCartData.filter((item)=>{
-return cartItem._id !== item._id
+return cartItem.id !== item.id
     })
 
     setCart(deletedItem)

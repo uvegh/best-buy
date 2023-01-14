@@ -147,11 +147,11 @@ useEffect(()=>{
   (    <div className="text-center min-vh-50 container-fluid">
                     <div class="lds-ripple m-auto"><div></div><div></div></div>
                     </div>):
-                    myProducts.map(({image,price,description,_id,name},product)=>(
+                    myProducts.map(({image,price,description,id,name},product)=>(
 
-    <div className="col m-auto border-end" key={_id}>
-    <Link to={`/shop/${_id}`} className="text-decoration-none text-dark">
-    <LazyLoadImage src={`http://159.65.21.42:9000${image}`} width={200} height={200} alt=""
+    <div className="col m-auto border-end" key={id}>
+    <Link to={`/shop/${id}`} className="text-decoration-none text-dark">
+    <LazyLoadImage src={image} width={200} height={200} alt=""
     placeholderSrc={Apple1} effect="blur"
      />
     <h3>{name}</h3>

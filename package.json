@@ -1,4 +1,5 @@
-{"homepage": "http://uvegh.github.io/best-buy/home",
+{
+  "homepage": "http://uvegh.github.io/best-buy",
   "name": "best-buy",
   "version": "0.1.0",
   "private": true,

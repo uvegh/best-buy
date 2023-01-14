@@ -33,13 +33,13 @@ export default function Cart() {
             <div className="col-7 border-top">
             <div className="row  bg-white border border-light m-auto">
               <div className="col">
-                <img className="img-fluid" src={`http://159.65.21.42:9000${item.image}`} alt="" />
+                <img className="img-fluid" src={item.image} alt="" />
               </div>
               <div className="col">
                 <h5 className="fw-bold">
            {item.name}
                 </h5>
-                <p>{item.description}</p>
+                <p className="fs-6 fw-lighter">{item.description}</p>
                 <p>${item.price}</p>
               </div>
 

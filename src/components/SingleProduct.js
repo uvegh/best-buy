@@ -25,7 +25,8 @@ import { useContext } from "react";
 import { BestBuyContext } from "../context/BestBuyContext";
 
 export default function SingleProduct() {
-  const { _id } = useParams();
+  const {_id} = useParams();
+  console.log(_id);
   const {addToCart}=useContext(BestBuyContext)
   const [isShown, setIshown] = useState(false);
   const [cartValidate, setCartValidate] = useState(false);
@@ -40,10 +41,10 @@ export default function SingleProduct() {
   ];
 
   const getProduct=()=>{
-    fetch(`http://159.65.21.42:9000/product/${_id}`)
+    fetch("https://fakestoreapi.com/products/"+_id)
     .then(resp=>resp.json())
     .then((data)=>{
-     console.log(data);
+    //  console.log(data);
       setProduct(data)
     })
   }
@@ -77,7 +78,7 @@ export default function SingleProduct() {
     </div>
 
         <div className="col-7 text-center" >
-        <Link onClick={handlePopup} >   <img className="img-fluid" src={`http://159.65.21.42:9000${product.image}`} alt="" /></Link>
+        <Link onClick={handlePopup} >   <img className="img-fluid" src={product.image} alt="" /></Link>
         
         </div>
 
@@ -133,28 +134,28 @@ export default function SingleProduct() {
                 <div className="col-6 border" key={product.id} >
                   <Link>
                   
-                    <img className="img-fluid" src={`http://159.65.21.42:9000${product.image}`} alt="" />
+                    <img className="img-fluid" src={product.image} alt="" />
                   </Link>
                 </div>
 
-                <div className="col-6 border" key={`http://159.65.21.42:9000${product.image}`} >
+                <div className="col-6 border" key={product.image} >
                   <Link>
                   
-                    <img className="img-fluid" src={`http://159.65.21.42:9000${product.image}`} alt="" />
+                    <img className="img-fluid" src={product.image} alt="" />
                   </Link>
                 </div>
 
-                <div className="col-6 border" key={`http://159.65.21.42:9000${product.image}`} >
+                <div className="col-6 border" key={product.image} >
                   <Link>
                   
-                    <img className="img-fluid" src={`http://159.65.21.42:9000${product.image}`} alt="" />
+                    <img className="img-fluid" src={product.image} alt="" />
                   </Link>
                 </div>
 
-                <div className="col-6 border" key={`http://159.65.21.42:9000${product.image}`} >
+                <div className="col-6 border" src={product.image} >
                   <Link>
                   
-                    <img className="img-fluid" src={`http://159.65.21.42:9000${product.image}`} alt="" />
+                    <img className="img-fluid" src={product.image}lt="" />
                   </Link>
                 </div>
 
@@ -168,7 +169,7 @@ export default function SingleProduct() {
             <div className="col text-center ">
               <img
                 className="img-fluid"
-                src={`http://159.65.21.42:9000${product.image}`}
+                src={product.image}
                 alt=""
                 style={{ width: "300px",height:"400px" }}
               />
